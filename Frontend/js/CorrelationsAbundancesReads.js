@@ -93,7 +93,12 @@ var svgFigure6nC = d3.select("#HistogramsCorrsCHX").append("svg")
       					.attr("transform", "translate(17," +15+ ")")
       					.style("font-size","12px");
       				
-      				
+      					//x-axis line
+    			svgFigure6.selectAll(".x.axis")	
+  					.append("rect")
+  	   				.attr("width", widthFigure6)
+  	   				.attr("height",1)
+  	   				.attr("fill","#000")
       				
       					
     				    				

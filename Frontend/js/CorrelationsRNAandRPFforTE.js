@@ -53,6 +53,14 @@ svgFigureE.append("g")
       				.attr("class", "x axis")
       				.attr("transform", "translate(0," + heightFigureE + ")")
       				.call(xAxisFigureE);
+    				
+    				
+    		    //x-axis line
+    			svgFigureE.selectAll(".x.axis")	
+  					.append("rect")
+  	   				.attr("width", widthFigureE)
+  	   				.attr("height",1)
+  	   				.attr("fill","#000")
     				    				
 				svgFigureE.append("text")      // text label for the x axis
 					.attr("class", "xaxis_label1")

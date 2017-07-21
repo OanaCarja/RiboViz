@@ -55,7 +55,16 @@ var svgFigure7 = d3.select("#CorrelationsReadsandFeatures").append("svg")
       				.attr("class", "x axis")
       				.attr("transform", "translate(0," + heightFigure7 + ")")
       				.call(xAxisFigure7);
-    				    				
+    				    	
+    				    	
+    		    	//x-axis line
+    			svgFigure7.selectAll(".x.axis")	
+  					.append("rect")
+  	   				.attr("width", widthFigure7)
+  	   				.attr("height",1)
+  	   				.attr("fill","#000")
+  	   				
+  	   							
 				svgFigure7.append("text")     
 					.attr("class", "xaxis_label1")
 					.attr("transform", "translate(" + (widthFigure7 / 2) + " ," + (heightFigure7 + paddingFigure7*8) + ")")

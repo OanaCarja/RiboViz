@@ -85,7 +85,17 @@ svgFigure6.append("g")
       				.attr("class", "x axis")
       				.attr("transform", "translate(0," + (heightFigure6) + ")")
       				.call(xAxisFigure6);
-    				    				
+    				   
+    				   
+    				   
+    		    	//x-axis line
+    			svgFigure6.selectAll(".x.axis")	
+  					.append("rect")
+  	   				.attr("width", widthFigure6)
+  	   				.attr("height",1)
+  	   				.attr("fill","#000")
+  	   				
+  	   				 				
 				svgFigure6.append("text")      // text label for the x axis
 					.attr("class", "xaxis_label1")
 					.attr("transform", "translate(" + (widthFigure6 / 2) + " ," + (heightFigure6 + paddingFigure6*8) + ")")

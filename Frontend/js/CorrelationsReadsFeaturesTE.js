@@ -53,6 +53,13 @@ svgFigure7.append("g")
       				.attr("class", "x axis")
       				.attr("transform", "translate(0," + heightFigure7 + ")")
       				.call(xAxisFigure7);
+      				
+      				//x-axis line
+    			svgFigure7.selectAll(".x.axis")	
+  					.append("rect")
+  	   				.attr("width", widthFigure7)
+  	   				.attr("height",1)
+  	   				.attr("fill","#000")
     				    				
 				svgFigure7.append("text")      // text label for the x axis
 					.attr("class", "xaxis_label1")
