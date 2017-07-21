@@ -94,7 +94,7 @@ svgFigure7.append("g")
        			svgFigure7.append("text")
             		.attr("text-anchor", "middle")  
             		.attr("transform", "translate("+ (widthFigure7/2) +","+(heightFigure7+paddingFigure7*6.9)+")")  
-            		.text("TE").style("font-size","16px").style("fill","#777777");
+            		.text("Log10 TE").style("font-size","16px").style("fill","#777777");
 
 
 d3.selectAll(".form-control")
@@ -163,7 +163,7 @@ function analyze(error, data, data1) {
 function updateFigure7(data, value1, value2) {
 
 var  data = data.map( function (d, i) { 
-	if(value1=="RPF"){choosetheone=te[i]};
+	if(value1=="RPF"){choosetheone=Math.log10(te[i])};
 	if(value2=="Length"){choosethetwo=d.Length};
 	if(value2=="FEatg"){choosethetwo=d.FEatg};
 	if(value2=="FEcap"){choosethetwo=d.FEcap};

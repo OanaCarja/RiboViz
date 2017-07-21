@@ -89,12 +89,12 @@ svgFigureE.append("g")
         		svgFigureE.append("text")
             		.attr("text-anchor", "middle")  
             		.attr("transform", "translate("+(0-paddingFigureE*8.5)+","+(heightFigureE/2)+")rotate(-90)")  
-            		.text("Log10 RNA").style("font-size","16px").style("fill","#777777");
+            		.text("Log10 RPF").style("font-size","16px").style("fill","#777777");
 
        			svgFigureE.append("text")
             		.attr("text-anchor", "middle")  
             		.attr("transform", "translate("+ (widthFigureE/2) +","+(heightFigureE+paddingFigureE*6.9)+")")  
-            		.text("Log10 RPF").style("font-size","16px").style("fill","#777777");
+            		.text("Log10 RNA").style("font-size","16px").style("fill","#777777");
 
 
 d3.selectAll(".form-control")
@@ -163,8 +163,8 @@ function analyze(error, data, data1) {
 
 
 var  data = data.map( function (d, i) { 
-	choosetheone=dataRPF[i];
-	choosethetwo=dataRNA[i];
+	choosetheone=dataRNA[i];
+	choosethetwo=dataRPF[i];
     return { 
       d1: +choosetheone,
       d2: +choosethetwo,
